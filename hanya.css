@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: flex;
+    background-size: 960pt 500pt;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    float: left;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    font-family: 'Times New Roman';
+    color: gray;
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manu .navs1{
+    transition: 200ms;
+    transform: scaleX(0);
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    transition: 0.4s ease-in-out;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+a::after {
+    opacity 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+ul li a:hover{
+    color: gray;
+    transform: 1;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+
+
+  
+  .hero-section {
+    background-image: url(Foto/sidephoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content1 {
+    font-size: 3.5em;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.content1 a:hover {
+    opacity: 0.8;
+}
+
+
+.about {
+    background-color: white;
+    padding: 80px 50px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: -50px auto 100px;
+    border-radius: 10px;
+    max-width: 1100px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 40px auto 40px;
+    text-align: justify;
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid grey;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: gray;
+    border: 2px solid gray;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.h1 .wow{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    margin-top: 100px;
+    padding-left: 200px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.data{
+    width: 1200px;
+    height: auto;
+    margin-left: 100px;
+    color: black;
+    text-align: center;
+    float: left;
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.data .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: white;
+}
+
+
+
+footer {
+    background-color: grey;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1235px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: grey 2px solid;
+}
+
+.footer-selec {
+    width: 45%;
+}
+
+.footer-selec h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-selec p {
+    margin: 10px 0;
+}
+
+.footer-selec a {
+    color: #66d1d9;
+    text-decoration: none;
+}
+
+.footer-selec a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-cont {
+        flex-direction: column;
+    }
+
+    .footer-selec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.Misidanvisi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.misi, .visi {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.misi h3, .visi h3 {
+    font-size: 2em;
+    color: #004f60;
+    margin-bottom: 20px;
+}
+
+.misi ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.misi ul li {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: black;
+    position: absolute;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.formsz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; 
+    padding: 0;
+    margin: 0;
+}
